@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A50F1B41207A8A3200F7BB72 /* TwitSplit+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F1B40207A8A3200F7BB72 /* TwitSplit+Builder.swift */; };
+		A54983562079BADF00B9B41C /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54983552079BADF00B9B41C /* KMPlaceholderTextView.swift */; };
+		A5498359207A487700B9B41C /* TwitConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5498358207A487700B9B41C /* TwitConfiguration.swift */; };
+		A549835C207A4B8D00B9B41C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549835B207A4B8D00B9B41C /* Node.swift */; };
+		A549835E207A4D4000B9B41C /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549835D207A4D4000B9B41C /* LinkedList.swift */; };
+		A5498360207A671200B9B41C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549835F207A671200B9B41C /* Message.swift */; };
+		A5498362207A67A600B9B41C /* TwitSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5498361207A67A600B9B41C /* TwitSplit.swift */; };
+		A5498365207A68A900B9B41C /* TwitEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5498364207A68A900B9B41C /* TwitEnum.swift */; };
+		A5498367207A6C3600B9B41C /* TwitValidateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5498366207A6C3600B9B41C /* TwitValidateProtocol.swift */; };
+		A549836A207A791900B9B41C /* TwitBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5498369207A791900B9B41C /* TwitBuilderProtocol.swift */; };
+		A549836C207A79C800B9B41C /* TwitComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549836B207A79C800B9B41C /* TwitComponent.swift */; };
+		A549836F207A852F00B9B41C /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549836E207A852F00B9B41C /* String+Trim.swift */; };
+		A563B45520792AEE0000BC5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A563B45420792AEE0000BC5B /* AppDelegate.swift */; };
+		A563B45720792AEE0000BC5B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A563B45620792AEE0000BC5B /* ChatViewController.swift */; };
+		A563B45A20792AEE0000BC5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A563B45820792AEE0000BC5B /* Main.storyboard */; };
+		A563B45C20792AEE0000BC5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A563B45B20792AEE0000BC5B /* Assets.xcassets */; };
+		A563B45F20792AEE0000BC5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A563B45D20792AEE0000BC5B /* LaunchScreen.storyboard */; };
+		A5715B4A207B45CC0001C145 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5715B49207B45CC0001C145 /* BaseViewController.swift */; };
+		A5715B4D207B57310001C145 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5715B4C207B57310001C145 /* BaseTableViewCell.swift */; };
+		A5715B50207B589C0001C145 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5715B4E207B589C0001C145 /* MessageTableViewCell.swift */; };
+		A5715B51207B589C0001C145 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5715B4F207B589C0001C145 /* MessageTableViewCell.xib */; };
+		A5715B53207B6F1E0001C145 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5715B52207B6F1E0001C145 /* Constants.swift */; };
+		A5715B55207B71070001C145 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5715B54207B71070001C145 /* Utils.swift */; };
+		A59865542080A51700F82A5B /* TwitSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59865532080A51700F82A5B /* TwitSplitTests.swift */; };
+		A598655B2080A64A00F82A5B /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549836E207A852F00B9B41C /* String+Trim.swift */; };
+		A598655C2080A65100F82A5B /* TwitSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5498361207A67A600B9B41C /* TwitSplit.swift */; };
+		A598655D2080A65100F82A5B /* TwitSplit+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F1B40207A8A3200F7BB72 /* TwitSplit+Builder.swift */; };
+		A598655E2080A65100F82A5B /* TwitValidateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5498366207A6C3600B9B41C /* TwitValidateProtocol.swift */; };
+		A598655F2080A65100F82A5B /* TwitBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5498369207A791900B9B41C /* TwitBuilderProtocol.swift */; };
+		A59865602080A65100F82A5B /* TwitComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549836B207A79C800B9B41C /* TwitComponent.swift */; };
+		A59865612080A65400F82A5B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549835F207A671200B9B41C /* Message.swift */; };
+		A59865622080A65700F82A5B /* TwitEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5498364207A68A900B9B41C /* TwitEnum.swift */; };
+		A59865632080A66000F82A5B /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549835B207A4B8D00B9B41C /* Node.swift */; };
+		A59865642080A66300F82A5B /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549835D207A4D4000B9B41C /* LinkedList.swift */; };
+		A59865652080A66700F82A5B /* TwitConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5498358207A487700B9B41C /* TwitConfiguration.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A59865562080A51700F82A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A563B44920792AEE0000BC5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A563B45020792AEE0000BC5B;
+			remoteInfo = TwitSplit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A50F1B40207A8A3200F7BB72 /* TwitSplit+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TwitSplit+Builder.swift"; sourceTree = "<group>"; };
+		A54983552079BADF00B9B41C /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
+		A5498358207A487700B9B41C /* TwitConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitConfiguration.swift; sourceTree = "<group>"; };
+		A549835B207A4B8D00B9B41C /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		A549835D207A4D4000B9B41C /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		A549835F207A671200B9B41C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A5498361207A67A600B9B41C /* TwitSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitSplit.swift; sourceTree = "<group>"; };
+		A5498364207A68A900B9B41C /* TwitEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitEnum.swift; sourceTree = "<group>"; };
+		A5498366207A6C3600B9B41C /* TwitValidateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TwitValidateProtocol.swift; path = TwitSplit/Libs/MessageSplit/TwitService/TwitValidateProtocol.swift; sourceTree = SOURCE_ROOT; };
+		A5498369207A791900B9B41C /* TwitBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitBuilderProtocol.swift; sourceTree = "<group>"; };
+		A549836B207A79C800B9B41C /* TwitComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitComponent.swift; sourceTree = "<group>"; };
+		A549836E207A852F00B9B41C /* String+Trim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
+		A563B45120792AEE0000BC5B /* TwitSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A563B45420792AEE0000BC5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A563B45620792AEE0000BC5B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A563B45920792AEE0000BC5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A563B45B20792AEE0000BC5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A563B45E20792AEE0000BC5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A563B46020792AEE0000BC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5715B49207B45CC0001C145 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A5715B4C207B57310001C145 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		A5715B4E207B589C0001C145 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		A5715B4F207B589C0001C145 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		A5715B52207B6F1E0001C145 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A5715B54207B71070001C145 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A59865512080A51700F82A5B /* TwitSplitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitSplitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59865532080A51700F82A5B /* TwitSplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitSplitTests.swift; sourceTree = "<group>"; };
+		A59865552080A51700F82A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A563B44E20792AEE0000BC5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A598654E2080A51700F82A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5498357207A465E00B9B41C /* MessageSplit */ = {
+			isa = PBXGroup;
+			children = (
+				A549836D207A851300B9B41C /* Extension */,
+				A5498368207A78D300B9B41C /* TwitService */,
+				A5498363207A684400B9B41C /* Common */,
+				A549835A207A4B7800B9B41C /* LinkedList */,
+				A5498358207A487700B9B41C /* TwitConfiguration.swift */,
+			);
+			path = MessageSplit;
+			sourceTree = "<group>";
+		};
+		A549835A207A4B7800B9B41C /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				A549835B207A4B8D00B9B41C /* Node.swift */,
+				A549835D207A4D4000B9B41C /* LinkedList.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		A5498363207A684400B9B41C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A549835F207A671200B9B41C /* Message.swift */,
+				A5498364207A68A900B9B41C /* TwitEnum.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A5498368207A78D300B9B41C /* TwitService */ = {
+			isa = PBXGroup;
+			children = (
+				A5498361207A67A600B9B41C /* TwitSplit.swift */,
+				A50F1B40207A8A3200F7BB72 /* TwitSplit+Builder.swift */,
+				A5498366207A6C3600B9B41C /* TwitValidateProtocol.swift */,
+				A5498369207A791900B9B41C /* TwitBuilderProtocol.swift */,
+				A549836B207A79C800B9B41C /* TwitComponent.swift */,
+			);
+			path = TwitService;
+			sourceTree = "<group>";
+		};
+		A549836D207A851300B9B41C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A549836E207A852F00B9B41C /* String+Trim.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A563B44820792AEE0000BC5B = {
+			isa = PBXGroup;
+			children = (
+				A563B45320792AEE0000BC5B /* TwitSplit */,
+				A59865522080A51700F82A5B /* TwitSplitTests */,
+				A563B45220792AEE0000BC5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A563B45220792AEE0000BC5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A563B45120792AEE0000BC5B /* TwitSplit.app */,
+				A59865512080A51700F82A5B /* TwitSplitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A563B45320792AEE0000BC5B /* TwitSplit */ = {
+			isa = PBXGroup;
+			children = (
+				A563B47020792BD60000BC5B /* Models */,
+				A563B46F20792B9F0000BC5B /* Storyboard */,
+				A563B46E20792B8D0000BC5B /* Networking */,
+				A563B46D20792B820000BC5B /* Resources */,
+				A563B46C20792B770000BC5B /* Libs */,
+				A563B46B20792B5C0000BC5B /* Utils */,
+				A563B46920792B4D0000BC5B /* Views */,
+				A563B46820792B330000BC5B /* ViewControllers */,
+				A563B46720792B280000BC5B /* Constant */,
+				A563B46620792B1F0000BC5B /* Extension */,
+				A563B45420792AEE0000BC5B /* AppDelegate.swift */,
+				A563B45B20792AEE0000BC5B /* Assets.xcassets */,
+				A563B45D20792AEE0000BC5B /* LaunchScreen.storyboard */,
+				A563B46020792AEE0000BC5B /* Info.plist */,
+			);
+			path = TwitSplit;
+			sourceTree = "<group>";
+		};
+		A563B46620792B1F0000BC5B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A563B46720792B280000BC5B /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				A5715B52207B6F1E0001C145 /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		A563B46820792B330000BC5B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A563B45620792AEE0000BC5B /* ChatViewController.swift */,
+				A5715B49207B45CC0001C145 /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A563B46920792B4D0000BC5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5715B4B207B56FB0001C145 /* TableCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A563B46B20792B5C0000BC5B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A5715B54207B71070001C145 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A563B46C20792B770000BC5B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				A54983552079BADF00B9B41C /* KMPlaceholderTextView.swift */,
+				A5498357207A465E00B9B41C /* MessageSplit */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		A563B46D20792B820000BC5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A563B46E20792B8D0000BC5B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A563B46F20792B9F0000BC5B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A563B45820792AEE0000BC5B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A563B47020792BD60000BC5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5715B4B207B56FB0001C145 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				A5715B4C207B57310001C145 /* BaseTableViewCell.swift */,
+				A5715B4E207B589C0001C145 /* MessageTableViewCell.swift */,
+				A5715B4F207B589C0001C145 /* MessageTableViewCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		A59865522080A51700F82A5B /* TwitSplitTests */ = {
+			isa = PBXGroup;
+			children = (
+				A59865532080A51700F82A5B /* TwitSplitTests.swift */,
+				A59865552080A51700F82A5B /* Info.plist */,
+			);
+			path = TwitSplitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A563B45020792AEE0000BC5B /* TwitSplit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A563B46320792AEE0000BC5B /* Build configuration list for PBXNativeTarget "TwitSplit" */;
+			buildPhases = (
+				A563B44D20792AEE0000BC5B /* Sources */,
+				A563B44E20792AEE0000BC5B /* Frameworks */,
+				A563B44F20792AEE0000BC5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitSplit;
+			productName = TwitSplit;
+			productReference = A563B45120792AEE0000BC5B /* TwitSplit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A59865502080A51700F82A5B /* TwitSplitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A598655A2080A51700F82A5B /* Build configuration list for PBXNativeTarget "TwitSplitTests" */;
+			buildPhases = (
+				A598654D2080A51700F82A5B /* Sources */,
+				A598654E2080A51700F82A5B /* Frameworks */,
+				A598654F2080A51700F82A5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A59865572080A51700F82A5B /* PBXTargetDependency */,
+			);
+			name = TwitSplitTests;
+			productName = TwitSplitTests;
+			productReference = A59865512080A51700F82A5B /* TwitSplitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A563B44920792AEE0000BC5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "tri dang huu";
+				TargetAttributes = {
+					A563B45020792AEE0000BC5B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A59865502080A51700F82A5B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A563B45020792AEE0000BC5B;
+					};
+				};
+			};
+			buildConfigurationList = A563B44C20792AEE0000BC5B /* Build configuration list for PBXProject "TwitSplit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A563B44820792AEE0000BC5B;
+			productRefGroup = A563B45220792AEE0000BC5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A563B45020792AEE0000BC5B /* TwitSplit */,
+				A59865502080A51700F82A5B /* TwitSplitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A563B44F20792AEE0000BC5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A563B45F20792AEE0000BC5B /* LaunchScreen.storyboard in Resources */,
+				A5715B51207B589C0001C145 /* MessageTableViewCell.xib in Resources */,
+				A563B45C20792AEE0000BC5B /* Assets.xcassets in Resources */,
+				A563B45A20792AEE0000BC5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A598654F2080A51700F82A5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A563B44D20792AEE0000BC5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5715B4D207B57310001C145 /* BaseTableViewCell.swift in Sources */,
+				A549835E207A4D4000B9B41C /* LinkedList.swift in Sources */,
+				A563B45720792AEE0000BC5B /* ChatViewController.swift in Sources */,
+				A5715B50207B589C0001C145 /* MessageTableViewCell.swift in Sources */,
+				A549836F207A852F00B9B41C /* String+Trim.swift in Sources */,
+				A549835C207A4B8D00B9B41C /* Node.swift in Sources */,
+				A54983562079BADF00B9B41C /* KMPlaceholderTextView.swift in Sources */,
+				A5715B4A207B45CC0001C145 /* BaseViewController.swift in Sources */,
+				A549836A207A791900B9B41C /* TwitBuilderProtocol.swift in Sources */,
+				A549836C207A79C800B9B41C /* TwitComponent.swift in Sources */,
+				A5498359207A487700B9B41C /* TwitConfiguration.swift in Sources */,
+				A563B45520792AEE0000BC5B /* AppDelegate.swift in Sources */,
+				A50F1B41207A8A3200F7BB72 /* TwitSplit+Builder.swift in Sources */,
+				A5498362207A67A600B9B41C /* TwitSplit.swift in Sources */,
+				A5498367207A6C3600B9B41C /* TwitValidateProtocol.swift in Sources */,
+				A5498365207A68A900B9B41C /* TwitEnum.swift in Sources */,
+				A5498360207A671200B9B41C /* Message.swift in Sources */,
+				A5715B55207B71070001C145 /* Utils.swift in Sources */,
+				A5715B53207B6F1E0001C145 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A598654D2080A51700F82A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59865622080A65700F82A5B /* TwitEnum.swift in Sources */,
+				A59865632080A66000F82A5B /* Node.swift in Sources */,
+				A59865602080A65100F82A5B /* TwitComponent.swift in Sources */,
+				A598655D2080A65100F82A5B /* TwitSplit+Builder.swift in Sources */,
+				A598655C2080A65100F82A5B /* TwitSplit.swift in Sources */,
+				A598655E2080A65100F82A5B /* TwitValidateProtocol.swift in Sources */,
+				A598655F2080A65100F82A5B /* TwitBuilderProtocol.swift in Sources */,
+				A59865612080A65400F82A5B /* Message.swift in Sources */,
+				A598655B2080A64A00F82A5B /* String+Trim.swift in Sources */,
+				A59865642080A66300F82A5B /* LinkedList.swift in Sources */,
+				A59865652080A66700F82A5B /* TwitConfiguration.swift in Sources */,
+				A59865542080A51700F82A5B /* TwitSplitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A59865572080A51700F82A5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A563B45020792AEE0000BC5B /* TwitSplit */;
+			targetProxy = A59865562080A51700F82A5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A563B45820792AEE0000BC5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A563B45920792AEE0000BC5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A563B45D20792AEE0000BC5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A563B45E20792AEE0000BC5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A563B46120792AEE0000BC5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A563B46220792AEE0000BC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A563B46420792AEE0000BC5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TwitSplit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dd.TwitSplit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A563B46520792AEE0000BC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TwitSplit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dd.TwitSplit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A59865582080A51700F82A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TwitSplitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dd.TwitSplitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitSplit.app/TwitSplit";
+			};
+			name = Debug;
+		};
+		A59865592080A51700F82A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TwitSplitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dd.TwitSplitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitSplit.app/TwitSplit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A563B44C20792AEE0000BC5B /* Build configuration list for PBXProject "TwitSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A563B46120792AEE0000BC5B /* Debug */,
+				A563B46220792AEE0000BC5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A563B46320792AEE0000BC5B /* Build configuration list for PBXNativeTarget "TwitSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A563B46420792AEE0000BC5B /* Debug */,
+				A563B46520792AEE0000BC5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A598655A2080A51700F82A5B /* Build configuration list for PBXNativeTarget "TwitSplitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59865582080A51700F82A5B /* Debug */,
+				A59865592080A51700F82A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A563B44920792AEE0000BC5B /* Project object */;
+}

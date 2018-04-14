@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageTableViewCell" rowHeight="163" id="KGk-i7-Jjw" customClass="MessageTableViewCell" customModule="TwitSplit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="162.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbb-1H-55F" userLabel="ViewContent">
+                        <rect key="frame" x="0.0" y="0.0" width="326" height="162.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="TVw-MZ-zcN">
+                                <rect key="frame" x="5" y="5" width="41" height="41"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Công Tằn Tôn Nữ Bảo Bình" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29Z-PC-lSd">
+                                <rect key="frame" x="56" y="10" width="260" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Công tằn tôn nữ bảo bình đã tham gia nhóm chat. Beware!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNm-Ke-kT5">
+                                <rect key="frame" x="56" y="33" width="260" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAW-Ni-q4M">
+                                <rect key="frame" x="10" y="69.5" width="68.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Công tằn tôn nữ bảo bình đã tham gia nhóm chat. Beware!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAb-EV-csZ">
+                                <rect key="frame" x="10" y="85.5" width="306" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JNm-Ke-kT5" secondAttribute="trailing" constant="10" id="995-Lv-xlF"/>
+                            <constraint firstItem="JNm-Ke-kT5" firstAttribute="top" secondItem="29Z-PC-lSd" secondAttribute="bottom" constant="5" id="Cj8-zB-mWO"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GAb-EV-csZ" secondAttribute="bottom" constant="10" id="DkU-44-yco"/>
+                            <constraint firstItem="UAW-Ni-q4M" firstAttribute="leading" secondItem="wbb-1H-55F" secondAttribute="leading" constant="10" id="KKN-Mg-mnL"/>
+                            <constraint firstAttribute="trailing" secondItem="29Z-PC-lSd" secondAttribute="trailing" constant="10" id="MI9-88-BHt"/>
+                            <constraint firstItem="GAb-EV-csZ" firstAttribute="leading" secondItem="wbb-1H-55F" secondAttribute="leading" constant="10" id="NaY-Fr-nBv"/>
+                            <constraint firstItem="JNm-Ke-kT5" firstAttribute="leading" secondItem="29Z-PC-lSd" secondAttribute="leading" id="cCE-i0-dAt"/>
+                            <constraint firstItem="UAW-Ni-q4M" firstAttribute="top" secondItem="JNm-Ke-kT5" secondAttribute="bottom" constant="5" id="caI-17-ppr"/>
+                            <constraint firstItem="TVw-MZ-zcN" firstAttribute="top" secondItem="wbb-1H-55F" secondAttribute="top" constant="5" id="dTm-6z-dAO"/>
+                            <constraint firstItem="TVw-MZ-zcN" firstAttribute="leading" secondItem="wbb-1H-55F" secondAttribute="leading" constant="5" id="hMv-xH-EeC"/>
+                            <constraint firstAttribute="trailing" secondItem="GAb-EV-csZ" secondAttribute="trailing" constant="10" id="lUy-b1-1ls"/>
+                            <constraint firstItem="GAb-EV-csZ" firstAttribute="top" secondItem="UAW-Ni-q4M" secondAttribute="bottom" constant="5" id="qHq-R6-mSA"/>
+                            <constraint firstItem="29Z-PC-lSd" firstAttribute="leading" secondItem="TVw-MZ-zcN" secondAttribute="trailing" constant="10" id="sFT-zB-hDv"/>
+                            <constraint firstItem="29Z-PC-lSd" firstAttribute="top" secondItem="wbb-1H-55F" secondAttribute="top" constant="10" id="wOg-iu-8fg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wbb-1H-55F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="C2l-on-Bfw"/>
+                    <constraint firstItem="wbb-1H-55F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Sva-hp-GZ2"/>
+                    <constraint firstAttribute="trailing" secondItem="wbb-1H-55F" secondAttribute="trailing" id="i8Q-vM-uuw"/>
+                    <constraint firstAttribute="bottom" secondItem="wbb-1H-55F" secondAttribute="bottom" id="z1Y-bu-D6V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.66666666669999997" alpha="0.18656470070422534" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="baseContentView" destination="wbb-1H-55F" id="9HJ-dz-Wgj"/>
+                <outlet property="messageLabel" destination="JNm-Ke-kT5" id="66M-Af-9b2"/>
+                <outlet property="nameLabel" destination="29Z-PC-lSd" id="bqe-Mp-gq3"/>
+                <outlet property="orginMessage" destination="GAb-EV-csZ" id="cIV-cs-dKK"/>
+                <outlet property="profileImage" destination="TVw-MZ-zcN" id="Ids-XN-MUf"/>
+            </connections>
+            <point key="canvasLocation" x="-492" y="-0.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="41" height="41"/>
+    </resources>
+</document>
